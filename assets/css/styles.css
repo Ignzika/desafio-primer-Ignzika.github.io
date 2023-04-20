@@ -1,0 +1,346 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #212534;
+    color: rgb(242, 226, 196);
+    font-family: 'Lato', sans-serif;
+    /*guardo esperanza que habiliten comic sans*/
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* nav bar*/
+nav {
+    position: fixed;
+    width: 250px;
+    background: rgb(202, 195, 195);
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+
+nav:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(350px at 225px 24px);
+    clip-path: circle(340px at 150px 24px);
+}
+
+nav a {
+    display: block;
+    line-height: 3.125rem;
+    padding: 0 1.25rem;
+    color: rgb(1, 13, 52);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav a:hover {
+    background: #464f6e;
+    color: white;
+}
+
+nav a:active {
+    background: #464f6e;
+}
+
+/*hamburger*/
+/*yes, just the hamburger in css!!! */
+.navicon {
+    padding: 1.4375rem 1.25rem;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+}
+
+.navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+    position: absolute;
+}
+
+.navicon div:before {
+    top: -7px;
+}
+
+.navicon div:after {
+    top: 7px;
+}
+/*end of hamburger*/
+
+
+
+
+
+
+
+/*tarjeteria*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8em;
+    justify-content:space-evenly;
+    
+}
+
+div .heroimg{
+    width: 340px;
+}
+
+.card{
+    max-width: 350px;
+    min-width: 350px;
+    background-color: #191c29;   
+    text-align: center;
+    transition: all linear 0.5s ;
+    padding: 1em;
+    box-shadow: 0 0 5px;
+}
+
+.redes{
+    max-height: 290px;
+}
+
+.card:hover {
+    color: rgb(245, 214, 122 / 96%);
+    transition: transform 1s, ease-in-out 0.5s;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px;
+}
+
+.card-text {
+   padding: 1em;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.card h2{
+    font-weight: 400;
+}
+
+.card h3{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.card p{
+    font-weight: 300;
+}
+
+
+/*datos y contacto */
+
+#informaciones{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #806F5D;
+
+}
+
+.informacion{
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    padding-top: -5px;
+    padding-bottom: -5px;
+}
+
+.datos{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.datos a{
+    color: rgb(242, 226, 196);
+
+}
+
+.btn {
+    background-color: #806F5D;
+    border: none;
+    color: #212534;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 1.5rem ;
+    transition: all linear 0.5s ;
+  }
+
+.btn:hover {
+    background-color: #9e8b74;
+    transition: transform 1s, ease-in-out 0.5s;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px;
+}
+
+
+/*portafolio*/
+
+
+
+#portafolio article{
+    gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#portafolio a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.portacard{
+    max-width: 350px;
+    min-width: 350px;
+    background-color: #191c29;   
+    text-align: center;
+    transition: all linear 0.5s ;
+    box-shadow: 0 0 5px;
+    border: #9e8b74 1px solid;
+
+}
+
+.portacard:hover {
+    color: rgb(245, 214, 122 / 96%);
+    transition: transform 0.2s, ease-in-out 0.1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 90px;
+}
+
+
+.img1{
+    background-image: url(../img/dl01.png);
+    background-size: cover;
+    margin-top: 1em;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.img2{
+    background-image: url(../img/dl02.png);
+    background-size: cover;
+    margin-top: 1em;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}    
+
+.img3{
+    background-image: url(../img/dl03.png);
+    background-size: cover;
+    margin-top: 1em;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+} 
+
+.img4{
+    background-image: url(../img/dl04.png);
+    background-size: cover;
+    margin-top: 1em;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}    
+
+.img5{
+    background-image: url(../img/dl05.png);
+    background-size: cover;
+    margin-top: 1em;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}  
+
+.img6{
+    background-image: url(../img/dl06.png);
+    background-size: cover;
+    margin-top: 1em;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}   
+
+
+
+/*footer*/
+
+footer{
+    background-color: #806F5D;
+    text-align: center;
+    margin-top: -10px;
+}
+
+footer *{
+    margin: 0;
+    padding: 0;
+}
+
+.fecha{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/*separadores */
+.separador1 {
+   margin: 5em 0 0 0;
+   border: 10px solid;
+   padding: 10px;
+   border-image-source:  linear-gradient(#212534,#806F5D);
+   border-image-slice: fill 1;
+}
+
+.separador2{
+   border: 10px solid;
+   padding: 10px;
+   border-image-source:  linear-gradient(#806F5D,#212534);
+   border-image-slice: fill 1;
+}
+
+
+.separador3 {
+   margin: 5em 0 -10px 0;
+   border: 10px solid;
+   padding: 10px;
+   border-image-source:  linear-gradient(#212534,#806F5D);
+   border-image-slice: fill 1;
+}
+
