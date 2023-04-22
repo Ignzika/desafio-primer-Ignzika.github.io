@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -15,8 +17,8 @@ body{
 /* nav bar*/
 nav {
     position: fixed;
-    width: 250px;
-    background: rgb(202, 195, 195);
+    width: 300px;
+    background: #e5e1e1;
     color: rgba(0, 0, 0, 0.87);
     -webkit-clip-path: circle(24px at 30px 24px);
     clip-path: circle(24px at 32px 24px);
@@ -321,26 +323,27 @@ footer *{
 
 /*separadores */
 .separador1 {
-   margin: 5em 0 0 0;
+   margin: 5em 0 -5px 0;
    border: 10px solid;
    padding: 10px;
-   border-image-source:  linear-gradient(#212534,#806F5D);
+   border-image-source:  linear-gradient(#9faedb,#806F5D);
    border-image-slice: fill 1;
 }
 
 .separador2{
+   margin: -5px 0 5em 0;
    border: 10px solid;
    padding: 10px;
-   border-image-source:  linear-gradient(#806F5D,#212534);
+   border-image-source:  linear-gradient(#806F5D,#9faedb);
    border-image-slice: fill 1;
 }
 
 
 .separador3 {
-   margin: 5em 0 -10px 0;
+   margin: 5em 0 -15px 0;
    border: 10px solid;
    padding: 10px;
-   border-image-source:  linear-gradient(#212534,#806F5D);
+   border-image-source:  linear-gradient(#9faedb,#806F5D);
    border-image-slice: fill 1;
 }
 
